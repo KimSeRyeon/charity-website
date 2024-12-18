@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>charity website</title>
+        <!-- Font Awesome Stylesheet -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+            integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="css/index.css" />
+        <!-- jQuery Library -->
+        <script src="js/jquery-3.7.1.min.js"></script>
+        <!-- GSAP Library -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/gsap.min.js"></script>
+        <!-- ScrollTrigger Plugin -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/ScrollTrigger.min.js"></script>
+        <!-- Custom Script -->
+        <script src="js/index.js"></script>
+    </head>
+    <body>
+        <!--header start-->
+        <header>
+            <div class="header_menu">
+                <h1>
+                    <a href="index.html">charity</a>
+                </h1>
+                <ul>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="causes.html">Causes</a></li>
+                    <li><a href="program.html">Program</a></li>
+                    <li><a href="donation.html">Donation</a></li>
+                    <li><a href="news.html">News</a></li>
+                </ul>
+            </div>
+            <div class="header_icon">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <div class="bar">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+        </header>
+        <!--visual start-->
+        <div id="visual">
+            <video autoplay muted loop class="bg-video">
+                <source
+                    src="img/KakaoTalk_20241205_140346093.mp4"
+                    type="video/mp4"
+                />
+            </video>
+
+            <ul class="panel">
+                <li class="bg1"></li>
+                <li class="bg2"></li>
+                <li class="bg3"></li>
+            </ul>
+
+            <div class="txt_wrap">
+                <ul class="txt">
+                    <!--CHILD NUTRITION DEFICENCY-->
+                    <li>
+                        <h2>CHILD NUTRITION DEFICENCY</h2>
+                        <p>
+                            Childhood nutrition deficiency has become a severe
+                            problem in various African countries nowadays.
+                            Children are not receiving enough nutrition to grow
+                            their bodies and minds
+                        </p>
+                    </li>
+                    <!--ASSISTANCE FOR CHILDREN OF CONFLICT-->
+                    <li>
+                        <h2>Provide Emergency Relief</h2>
+                        <p>
+                            Children living in war-torn regions face extreme
+                            challenges daily, from displacement to lack of
+                            essential resources. These children need urgent
+                            support to secure their safety, well-being, and
+                            access to opportunities for growth and development.
+                        </p>
+                    </li>
+                    <!--The Global Water Shortage-->
+                    <li>
+                        <h2>The Global Water Shortage</h2>
+                        <p>
+                            The growing water shortage is a pressing concern in
+                            various countries, where droughts and mismanagement
+                            lead to severe water deficits. This lack of clean
+                            water threatens agricultural production, sanitation,
+                            and the well-being of communities.
+                        </p>
+                    </li>
+                    <li>
+                        <button>DONATE FOR CAUSES</button>
+                        <a href="#">LEARN MORE</a>
+                    </li>
+                </ul>
+                <ul class="control">
+                    <li class="prev">
+                        <i class="fa-solid fa-chevron-left"></i>
+                    </li>
+                    <li>
+                        <ul class="progress_bar">
+                            <li>
+                                <div></div>
+                            </li>
+                            <li>
+                                <div></div>
+                            </li>
+                            <li>
+                                <div></div>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="play_bar">
+                        <i class="fa-solid fa-pause pause"></i>
+                        <i class="fa-solid fa-play play"></i>
+                    </li>
+                    <li class="next">
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </li>
+                </ul>
+            </div>
+            <div class="scroll">
+                <p>SCROLL</p>
+                <div class="bar">
+                    <div class="circle"></div>
+                </div>
+            </div>
+        </div>
+        <!--container start-->
+        <!--con1-->
+        <div id="container">
+            <section class="con1">
+                <div>
+                    <h2>GET INVOLED</h2>
+                    <p>
+                        Join us in providing support to those in need, as many
+                        relief efforts tend to repeat the same approaches, but
+                        this initiative is truly unique in its impact.
+                    </p>
+                    <div>
+                        <ul>
+                            <li><i class="fa-solid fa-bullhorn"></i></li>
+                            <li>VOLUNTEERING</li>
+                            <li>
+                                "Become a volunteer and contribute your time to
+                                those who need it most. Your efforts can bring
+                                hope, support, and lasting change to individuals
+                                and communities facing adversity."
+                            </li>
+                        </ul>
+
+                        <ul>
+                            <li>
+                                <i
+                                    class="fa-solid fa-circle-dollar-to-slot"
+                                ></i>
+                            </li>
+                            <li>DONATING</li>
+                            <li>
+                                "Your generous donation can make a huge
+                                difference. Help us provide critical resources
+                                and aid to those in need, empowering communities
+                                and creating a brighter future for all."
+                            </li>
+                        </ul>
+
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-hand-holding-heart"></i>
+                            </li>
+                            <li>SUPPORTING</li>
+                            <li>
+                                "Your ongoing support helps provide essential
+                                services to communities in need. Together, we
+                                can create lasting change and offer a hand to
+                                those who are struggling."
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <!--con2-->
+            <section class="con2">
+                <div class="boost-container">
+                    <div class="boost-header">
+                        <h2>Children in Urgent<br />Need of Relief</h2>
+                        <p>
+                            Join us in bringing hope and opportunity to children
+                            who need it most. Together, we can provide the care
+                            and support they deserve, helping them overcome
+                            challenges and build a brighter future. Every child
+                            has the potential to thrive—with your help, we can
+                            make it happen.
+                        </p>
+                        <div class="button-group">
+                            <a href="#" class="secondary">Learn More</a>
+                            <a href="#">Sponsor Now</a>
+                        </div>
+                    </div>
+
+                    <div class="boost-child-container">
+                        <div class="boost-child">
+                            <img
+                                src="https://via.placeholder.com/60"
+                                alt="Mehwish"
+                            />
+                            <div class="boost-child-txt">
+                                <h3>Mehwish</h3>
+                                <p>
+                                    Compliment interested discretion estimating
+                                    on stimulated apartments oh.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="boost-child">
+                            <img
+                                src="https://via.placeholder.com/60"
+                                alt="Mehwish"
+                            />
+                            <div class="boost-child-txt">
+                                <h3>Mehwish</h3>
+                                <p>
+                                    Compliment interested discretion estimating
+                                    on stimulated apartments oh.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="boost-child">
+                            <img
+                                src="https://via.placeholder.com/60"
+                                alt="Mehwish"
+                            />
+                            <div class="boost-child-txt">
+                                <h3>Mehwish</h3>
+                                <p>
+                                    Compliment interested discretion estimating
+                                    on stimulated apartments oh.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="boost-child">
+                            <img
+                                src="https://via.placeholder.com/60"
+                                alt="Mehwish"
+                            />
+                            <div class="boost-child-txt">
+                                <h3>Mehwish</h3>
+                                <p>
+                                    Compliment interested discretion estimating
+                                    on stimulated apartments oh.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="boost-child">
+                            <img
+                                src="https://via.placeholder.com/60"
+                                alt="Mehwish"
+                            />
+                            <div class="boost-child-txt">
+                                <h3>Mehwish</h3>
+                                <p>
+                                    Compliment interested discretion estimating
+                                    on stimulated apartments oh.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--con3-->
+            <section class="con3">
+                <div class="vision">
+                    <img src="img/bgSquare.png" alt="logo" />
+                    <p>better world Hope and dream</p>
+                    <h2>Our Vision</h2>
+                    <div class="cards">
+                        <ul class="card">
+                            <li class="icon">
+                                <img src="img/bgSquare.png" alt="Icon 1" />
+                            </li>
+                            <li><h3>Find a Service</h3></li>
+                            <li>
+                                <p>
+                                    Providing tailored services that meet the
+                                    unique needs of individuals and communities,
+                                    ensuring everyone receives the support
+                                    needed to thrive and succeed.
+                                </p>
+                            </li>
+                        </ul>
+                        <ul class="card">
+                            <li class="icon">
+                                <img src="img/bgSquare.png" alt="Icon 1" />
+                            </li>
+                            <li><h3>Support Volunteers</h3></li>
+                            <li>
+                                <p>
+                                    Empowering volunteers to make a meaningful
+                                    impact through their time and efforts,
+                                    fostering a culture of compassion and
+                                    collective action to improve lives and
+                                    strengthen communities.
+                                </p>
+                            </li>
+                        </ul>
+                        <ul class="card">
+                            <li class="icon">
+                                <img src="img/bgSquare.png" alt="Icon 1" />
+                            </li>
+                            <li>
+                                <h3>Help for Heroes</h3>
+                            </li>
+                            <li>
+                                <p>
+                                    Supporting and honoring those who have
+                                    sacrificed for others, especially our
+                                    heroes, by providing the care, resources,
+                                    and recognition they truly deserve.
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <!--con4-->
+            <section class="con4">
+                <div class="container">
+                    <div class="image-section">
+                        <img
+                            src="img/close-up-smiley-kids-posing-together.jpg"
+                            alt="Children smiling"
+                        />
+                    </div>
+                    <div class="text-section">
+                        <h2>Support Hope<br />for Schoolless Children</h2>
+                        <p>
+                            Support Hope for Schoolless Children" is a campaign
+                            aimed at providing educational opportunities to
+                            children in Africa who are unable to attend school.
+                            Many children in underserved areas face significant
+                            barriers, including poverty, lack of infrastructure,
+                            and social challenges, which prevent them from
+                            accessing education. By supporting this cause, we
+                            can help create a better future for these children,
+                            offering them a chance to learn, grow, and reach
+                            their full potential. Your support can provide
+                            essential resources, such as school supplies,
+                            tuition assistance, and access to learning
+                            materials, ensuring that these children are no
+                            longer deprived of the education they deserve.
+                            Together, we can make a lasting impact, helping
+                            break the cycle of poverty and offering hope for a
+                            brighter tomorrow
+                        </p>
+                        <div class="button-group">
+                            <a href="#" class="secondary">Learn More</a>
+                            <a href="#">Sponsor Now</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--con5-->
+            <section class="con5">
+                <div class="news-container">
+                    <div class="card_news">
+                        <div class="textBox">
+                            <h2>Photo Album</h2>
+                            <p>THIS IS A FASHION MODEL PHOTOBOOK.</p>
+                        </div>
+                    </div>
+                    <ul class="list">
+                        <li class="a">
+                            <div class="box">
+                                <img src="img/photo1.png" />
+                            </div>
+                        </li>
+                        <li class="b">
+                            <div class="box">
+                                <img src="img/photo2.png" />
+                            </div>
+                        </li>
+                        <li class="c">
+                            <div class="box">
+                                <img src="img/photo3.png" />
+                            </div>
+                        </li>
+                        <li class="b">
+                            <div class="box">
+                                <img src="img/photo4.png" />
+                            </div>
+                        </li>
+                        <li class="a">
+                            <div class="box">
+                                <img src="img/photo5.png" />
+                            </div>
+                        </li>
+                        <li class="c">
+                            <div class="box">
+                                <img src="img/photo6.png" />
+                            </div>
+                        </li>
+                        <li class="b">
+                            <div class="box">
+                                <img src="img/photo7.png" />
+                            </div>
+                        </li>
+                        <li class="a">
+                            <div class="box">
+                                <img src="img/photo8.png" />
+                            </div>
+                        </li>
+                        <li class="c">
+                            <div class="box">
+                                <img src="img/photo9.png" />
+                            </div>
+                        </li>
+                        <li class="b">
+                            <div class="box">
+                                <img src="img/photo10.png" />
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <!--footer-->
+            <section class="footer">
+                <div>
+                    <h2>SIGN UP FOR NEWSLETTER</h2>
+                    <p>
+                        Sign up to stay up to date on our work around the world
+                        50,000+people already have!
+                    </p>
+                    <input
+                        type="mail"
+                        id="user"
+                        placeholder="Enter your Email Here"
+                    />
+                    <button class="sign">SIGN UP</button>
+                </div>
+
+                <section>
+                    <div>
+                        <ul>
+                            <li class="info-title">Charity</li>
+                            <li>Making a better world, one step at a time</li>
+                        </ul>
+                        <ul>
+                            <li class="info-title">About Us</li>
+                            <li>
+                                We provide support and drive change to make the
+                                world a more hopeful and just place.
+                            </li>
+                        </ul>
+                        <ul>
+                            <li class="info-title">Contact Us</li>
+                            <li>
+                                <i class="fa-solid fa-phone"></i>+08 222 2 22
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-envelope"></i
+                                >charity.gmail.com
+                            </li>
+                            <li>
+                                <ul class="sns-icon">
+                                    <li>
+                                        <i class="fa-brands fa-facebook-f"></i>
+                                    </li>
+                                    <li>
+                                        <i class="fa-brands fa-instagram"></i>
+                                    </li>
+                                    <li>
+                                        <i class="fa-brands fa-twitter"></i>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul>
+                            <li class="info-title">Information</li>
+                            <li>
+                                <ul>
+                                    <li>
+                                        <p>
+                                            <strong>Company Name:</strong>
+                                            Charity Foundation
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            <strong>Address:</strong> 123 Hope
+                                            Street, Dream City, Country
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            <strong>Established:</strong> 2020
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            <strong>Tax ID:</strong> 123-45-6789
+                                        </p>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li class="info-title">Helpful Links</li>
+                            <li>
+                                <ul class="links">
+                                    <li><a href="#">Service</a></li>
+                                    <li><a href="#">Support</a></li>
+                                    <li><a href="#">Terms & Condition</a></li>
+                                    <li><a href="#">Privacy Policy</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+                <p class="copy">2024 Charity. All rights reserved.</p>
+            </section>
+        </div>
+
+        <script>
+            gsap.registerPlugin(ScrollTrigger);
+        </script>
+    </body>
+</html>
